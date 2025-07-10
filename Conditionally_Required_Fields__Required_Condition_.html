@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conditionally Required Fields (Required Condition)</title>
+    <style>
+        body { font-family: Verdana, sans-serif; padding: 40px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Conditionally Required Fields (Required Condition)</h1>
+    <p>The standard Required and Read Only option on the Form designer lets you define fields that are always required or read only respectively.</p>
+<p>However sometimes you need to make a field required or read only based on the answer(s) to a previous field.</p>
+<p><br></p>
+<p>This is when you should use the <b>Required Condition</b> and <b>Read Only Condition </b>properties.</p>
+<p><br></p>
+<p>Both these properties work exactly the same way, so for ease, we're just going to refer to Required Condition in the rest of this recipe.</p>
+<p>Everything below applies equally to the Read Only Condition </p>
+<p><br></p>
+<p>Required Condition allows you to define a formula that will control whether or not the field is required.</p>
+<p>It works in a very similar way to the Visibility property, just for required-ness.</p>
+<p><br></p>
+<p><br></p>
+<p>Lets assume your Form design currently has a "Do you have any hazards?" field with Data Name of "seeHazards".</p>
+<p>Also assume that the seeHazards field has the values "Yes" and "No" as available option answers.</p>
+<p><br></p>
+<p>1. Add a new Text field to your Form design under the seeHazards field.</p>
+<p><br></p>
+<p>2. Give the new field a Data Name such as "hazardsDescription".</p>
+<p><br></p>
+<p>3. Find the Required property on the new field, then click the "add condition" link to the right.</p>
+<p>This will hide the standard Required checkbox and show the Required Condition formula field.</p>
+<p><br></p>
+<p>4. Now we need to create a formula that will give a True or False result.</p>
+<p>When the formula result is True, the field will become required.</p>
+<p>When the result is False, the field will not be required.</p>
+<p><br></p>
+<p>Enter the following formula into the Required Condition property:</p>
+<p><b style="font-size: 13px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">{{seeHazards}} = 'Yes'</b></p>
+<p><br></p>
+<p style="">What the above means is that when the seeHazards field is answered with a value of Yes, then the hazardsDescription field will be required.</p>
+<p style="">The user will not be able to proceed until they have filled out something in the hazardsDescription.</p>
+<p style=""><i style="font-size: 13px;"><br></i></p>
+<p style=""><i style="font-size: 13px;">To understand more about how to create a formula, see the <a href="http://Your Company.freshdesk.com/support/solutions/articles/1000000388" target="" style="font-size: 13px;">Creating a Formula </a>help page.</i></p>
+<p style=""><br></p>
+<p style=""><br></p>
+<p style="">All done!</p>
+<p style=""><br></p>
+<p style="">Save your Form and Test it on your device to see the conditionally required functionality in action.</p>
+<p style=""><br></p>
+<p style=""><br></p>
+<p style="">If you'd like to try the above example out for yourself, download the attached file.</p>
+<p style="">Then create a new Form and when you are in the Form designer, use the "Import Fields" button to import the file.</p>
+<p style="">This will import the above example for you to check out :)</p>
+<p><br></p>
+</body>
+</html>

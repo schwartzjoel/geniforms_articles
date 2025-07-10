@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Can I launch other apps on the user's device from within a Screen?</title>
+    <style>
+        body { font-family: Verdana, sans-serif; padding: 40px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Can I launch other apps on the user's device from within a Screen?</h1>
+    <div dir="ltr">
+<p style="line-height: 16.9px;">Launching other installed apps is possible only if the target app supports custom URL schemes.</p>
+<p style="line-height: 16.9px;"><br></p>
+<p style="line-height: 16.9px;">Basically this allows you to use the "Open Web Browser" interaction with an app-specific URL as the parameter.<br>e.g. <b style="font-size: 13px;">fb://requests</b> should open the Facebook app if its installed.<br><br></p>
+<p style="line-height: 16.9px;">You can also pass values into the target app if the app supports this.  <br>This is achieved by using formula syntax to dynamically generate the "Open Web Browser" parameter.<br>e.g. <strong>twitter://user?screen_name={{myfieldname}} </strong>should open Twitter to the given user's page.</p>
+<p style="line-height: 16.9px;"><br></p>
+<p style="line-height: 16.9px;">A simple way to test custom URL schemes easily by simply pasting these into your device's web browser - normally this is sufficient</p>
+<p style="line-height: 16.9px;"><br></p>
+<p style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 16.9px;'>For some reason, custom url schemes are not always readily advertised by app makers.</p>
+<p style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 16.9px;'><span style="font-size: 13px;">So we recommend you also search the web to find out if there are any URL schemes supported by your target app - use</span><span style="font-size: 13px;"> a search phrase like "custom URL scheme &lt;target app name here&gt;".</span></p>
+<p style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 16.9px;'><span><br></span></p>
+<p style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 16.9px;'><span><br></span></p>
+</div>
+</body>
+</html>
